@@ -93,3 +93,11 @@ p{
     display: inline-block;
     text-align: right;
 }
+label{
+    width: 100px;
+    display: inline-block;
+}
+input{
+    width: 200px;
+    display: inline-block;
+}
