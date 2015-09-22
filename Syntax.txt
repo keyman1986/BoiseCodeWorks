@@ -43,3 +43,25 @@ function person(first, last, age, eye) {
 }
 var myFather = new person("John", "Doe", 50, "blue");
 var myMother = new person("Sally", "Rally", 48, "green");
+
+
+---------------------------------------------------------------------------------------------
+
+AJAX   GET request
+
+function getPlayers(){
+
+	var players = [];
+
+	$.ajax({
+		
+		type: 'GET',
+		url: 'http://www.nfl.com/players',
+		success: function(response){
+			console.log(response);
+		},
+		error: function(response){
+			console.log('Woah! that was a bad request', response);
+		}
+	});
+};
