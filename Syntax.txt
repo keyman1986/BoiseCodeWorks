@@ -44,6 +44,18 @@ function person(first, last, age, eye) {
 var myFather = new person("John", "Doe", 50, "blue");
 var myMother = new person("Sally", "Rally", 48, "green");
 
+---------------------------------------------------------------------------------------------
+
+forEach LOOP (only for arrays)
+
+var food = ["Pizza", "Burrito", "Fries", "Chips", "Salad", "Fries", "Pizza"]
+
+food.forEach(function(f,i){
+  if(f === "Fries"){
+       console.log("WE FOUND " +f + " in index #" + i);     
+ }
+  else {console.log("Checking..... " + i);}
+});
 
 ---------------------------------------------------------------------------------------------
 
